@@ -1,18 +1,18 @@
 
-#' Title
-#'
-#' @param centers
-#' @param data
-#' @param x_seq
-#'
-#' @return
-#' @export
-#'
-#' @examples
-#'
 # library(factoextra)
 #Kmeans_dat=kmeans_hist(7,y=wine$quality, x=wine[,1:11], nstart=25)
 ##
+#' Title
+#'
+#' @param centers Number of clustering centers
+#' @param x  The dataframe excludes the label vector
+#' @param y A vector of labels
+#' @param nstart
+#'
+#' @return kmeans result
+#' @export
+#'
+#' @examples no example
 kmeans_hist<-function(centers,x,y, nstart){
   quality_kmeans <- kmeans(x = x , centers = centers, nstart = nstart) #scale(data[,x_seq])
   #fviz_cluster(quality_kmeans,  data = data[,x_seq], geom = "point")
