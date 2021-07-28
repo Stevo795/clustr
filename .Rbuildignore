@@ -2,3 +2,4 @@
 ^renv\.lock$
 ^clustr\.Rproj$
 ^\.Rproj\.user$
+^README\.Rmd$
